@@ -1,4 +1,4 @@
-Software engineering Week 2 Portfolio
+# Software engineering Week 2 Portfolio
 
 The GitHub repository has been created, this is where the project will be updated and shared between all people contributing to the project. 
 
