@@ -6,7 +6,7 @@ The first addition to the GitHub was to create a task board, this will be where 
 
 Here is our initial Task Board: 
 
-![TaskBoard](/Portfilio_Software_Engineering/Images/TaskBar.png?raw=true)
+![TaskBoard](/Images/TaskBar.png?raw=true)
 
 This will be updated and added to the further into the project. 
 
