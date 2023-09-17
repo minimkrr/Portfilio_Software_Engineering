@@ -11,3 +11,7 @@ Here is our initial Task Board:
 This will be updated and added to the further into the project. 
 
 We are using C# on visual studio as our IDE, all group members are using this to keep consistency as every IDE is different. I have a download of the Visual Studio IDE allowing me to clone the repo and work on the project. 
+
+Here is my Visual Studio with the GitHub repo cloned:
+
+![VisualStudioClone](/Images/VisualStudioClone.png?raw=true)
