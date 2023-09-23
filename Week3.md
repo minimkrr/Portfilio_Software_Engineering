@@ -4,4 +4,4 @@ All tasks are being split into different tasks which each group member will take
 
 The task each member has chosen is assigned to them which they can do themselves or someone else can assign it to them. They can then move the task from "To Do" and change it to "in development". This lets other members know that member is currently working on that task. Once the member thinks the task is done then the task is moved into "In Review" where other members can check they agree with the changes before the task in put into "testi" and then into "done" assuming it worked correctly. 
 
-
+![UpdatedTaskBoard](/Images/UpdatedTaskBoard.png?raw=true)
