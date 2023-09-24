@@ -10,7 +10,7 @@ My task includes beiing able to Search, edit delete and view items from the data
 
 ![myUI](/Images/myUI.png?raw=true)
 
-![myUIxaml](/Images/pickerInUI.png?raw=true)
+![myUIxaml](/Images/myUIxaml.png?raw=true)
 
 I added the picker option for what you wanted to do and blank tect boxes to enter any changes you wanted made to the data. 
 
