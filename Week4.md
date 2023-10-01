@@ -20,6 +20,8 @@ public class Character
 ```
 ````
 
+The errors with the code here is that Abilities is not initilised which may cause a NULL error as the class does not know what this is assigned to. Also the list has a private setter however it is still changeble outside of the class which could cause confusion and incorrect results if it is changes somewhere else in the program by mistake. 
+
 And here is my changes i would make to the class
 
 ````
