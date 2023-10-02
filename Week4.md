@@ -28,17 +28,20 @@ And here is my changes i would make to the class
 ```
 public class Character 
 {
-    public int Level { get; private set; }
-    private List<SpecialAbilities> Abilities { get; set; }
-
-    public Char()
-    {
-        Abilities = new List<SpecialAbilities>();
+    private int level;
+    public int Level 
+    { 
+        get { return level; }
+        private set 
+        {
+            if (value >= 0)
+                level = value;
+        }
     }
 
-    public void NewAbility(SpecialAbilities ability)
+    public Character()
     {
-        Abilities.Add(ability);
+        Level = 1;
     }
 
     public void LevelUp() 
