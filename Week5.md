@@ -38,4 +38,7 @@ My code meets all of these, using consistent formatting in all methods, my class
 
 ![Doxygen](/Images/Doxygen.png?raw=true)
 
-This output quite nicely shows the class and constructor name along with any functions and properties in the class. My class is kept nice and simple having a class which changes the characters level. 
+This output quite nicely shows the class and constructor name along with any functions and properties in the class. My class is kept nice and simple having a class which changes the characters level up by 1. There is a quick negative chack as the level should never be a negative and then the level is increased. 
+
+
+
