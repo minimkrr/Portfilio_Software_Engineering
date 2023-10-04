@@ -37,3 +37,5 @@ My code meets all of these, using consistent formatting in all methods, my class
 ## Here is the doxygen output for my code: 
 
 ![Doxygen](/Images/Doxygen.png?raw=true)
+
+This output quite nicely shows the class and constructor name along with any functions and properties in the class. My class is kept nice and simple having a class which changes the characters level. 
