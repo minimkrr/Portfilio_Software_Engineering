@@ -42,7 +42,7 @@ This output quite nicely shows the class and constructor name along with any fun
 
 ## Where I have eliminated the need for comments
 
-My naming of classes and functions is good, it explains what the class is controlling and what each functions inension is. Also the naming of Level is good for understanding that in the class Character the Level must be that the character is increasing in level. Specifically the method name LevelUp explains exactly what the method is doing and no commentary is needed to explain this.
+My naming of classes and functions is good, it explains what the class is controlling and what each functions inension is. Also the naming of Level is good for understanding that in the class Character the Level must be that the character is increasing in level. Specifically the method name LevelUp explains exactly what the method is doing and no commentary is needed to explain this. 
 
 
 
