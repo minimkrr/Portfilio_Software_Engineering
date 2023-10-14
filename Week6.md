@@ -59,6 +59,10 @@ The first test is just checking the new challange is created correctly and is no
 
 The check doesnt check if the word is actually a word of if there is a problem in the file with a blank line or not real word.
 
+Quick screenshot showing tests work as intended:
+
+![TestsWorking](/Images/TestsWorking.png?raw=true)
+
 
 
 
