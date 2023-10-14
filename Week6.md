@@ -57,7 +57,7 @@ The first test is just checking the new challange is created correctly and is no
 
 ## Limitations of tests
 
-The check doesnt check if the word is actually a work of if there is a problem in the file
+The check doesnt check if the word is actually a word of if there is a problem in the file with a blank line or not real word.
 
 
 
