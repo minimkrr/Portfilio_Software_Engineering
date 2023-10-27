@@ -10,6 +10,8 @@ I have decided to use radio buttons with the options of "All, TV, Radio, Press".
 
 This all works well currently just using a hard coded list. 
 
+Using the label and filtering by the type of media I am able to display only these options. I chose to make my radio buttons in C# rather than XAML this time just due to wanting to do something different however doing it in XAML does make the C# page look at little neater. 
+
 Here is a part of my code for filtering the options
 
 ```
