@@ -24,21 +24,9 @@ var AllButton = new RadioButton { Content = "All" };
         var PressButton = new RadioButton { Content = "Press" };
         var RadioButton = new RadioButton { Content = "Radio" };
 
-        AllButton.GroupName = "Options";
-        TVButton.GroupName = "Options";
-        PressButton.GroupName = "Options";
-        RadioButton.GroupName = "Options";
+```
 
-        var resultLabel = new Label { Text = "Selected option: " };
-
-        //Depending on button pressed filtering what is shown in the label
-
-        AllButton.CheckedChanged += (sender, e) =>
-        {
-            if (AllButton.IsChecked)
-                resultLabel.Text = "Selected option: Show All";
-                resultLabel.Text = string.Join(Environment.NewLine, items);
-        };
+```
 
         TVButton.CheckedChanged += (sender, e) =>
         {
