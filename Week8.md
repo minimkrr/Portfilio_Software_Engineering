@@ -1,4 +1,4 @@
-# Week 8 was using team workflow and implementing a task
+# Week 8 using team workflow and implementing a task
 
 ## Team Work Flow
 
