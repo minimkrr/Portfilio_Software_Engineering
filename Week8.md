@@ -12,7 +12,10 @@ This all works well currently just using a hard coded list.
 
 Using the label and filtering by the type of media I am able to display only these options. I chose to make my radio buttons in C# rather than XAML this time just due to wanting to do something different however doing it in XAML does make the C# page look at little neater. 
 
+The task is now in review and will act on feedback once reviewed. 
+
 Here is a part of my code for filtering the options
+
 
 ```
 var AllButton = new RadioButton { Content = "All" };
