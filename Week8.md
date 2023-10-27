@@ -70,6 +70,12 @@ They can be filtered using the radio buttons helpiing to find the one you want.
 
 # Screenshots of filtering
 
+![AllMedia](/Images/AllMdeia.png?raw=true)
 
+![TVMedia](/Images/TVMedia.png?raw=true)
+
+![PressMedia](/Images/PressMedia.png?raw=true)
+
+![RadioMedia](/Images/RadioMedia.png?raw=true)
 
 
