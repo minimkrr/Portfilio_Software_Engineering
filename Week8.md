@@ -66,4 +66,6 @@ var AllButton = new RadioButton { Content = "All" };
     }
 ```
 
+They can be filtered using the radio buttons helpiing to find the one you want. 
+
 
