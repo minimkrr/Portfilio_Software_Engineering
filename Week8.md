@@ -18,8 +18,8 @@ Here is a part of my code for filtering the options
 
 
 ```
+// Radio Buttons
 var AllButton = new RadioButton { Content = "All" };
-        // Radio Buttons
         var TVButton = new RadioButton { Content = "TV" };
         var PressButton = new RadioButton { Content = "Press" };
         var RadioButton = new RadioButton { Content = "Radio" };
