@@ -17,3 +17,6 @@ operationRecords.Add((operationName, $"{status} - {date.ToString("yyyy-MM-dd HH:
 ```
 I have error checking for an entry with no name giving an error message to fill in name of entry before it will be created. 
 
+The entries are shown with the name, time and date of creation and if the entry is updated the date and time will change to be the most recent edit of the entry. 
+
+
