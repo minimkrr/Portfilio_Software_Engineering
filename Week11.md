@@ -200,4 +200,9 @@ The code i reviewed had good naming conventions, all was easy to read. There wer
 
 My suggestions where to add some error handling and validation along with comments. 
 
+# Screenshots of my issue
+
+![Requests](/Images/Requests.png?raw=true)
+![Requests2](/Images/Requests2.png?raw=true)
+![Requests3](/Images/Requets3.png?raw=true)
 
