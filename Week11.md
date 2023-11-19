@@ -67,5 +67,34 @@ Using the XAML I have made a filtering system as every request is put into a cat
 </ContentPage>
 ```
 
-# Review of 
+# Improvements after review
+
+I was suggested to add error handling to my code so it doesnt just do nothing when the user does not fill in necissary boxes, here is my edited code to inprove error handling including comments on the new lines:
+
+```
+private void OnAddRequestClicked(object sender, EventArgs e)
+{
+    // Check if either Description or Category is empty
+    if (string.IsNullOrWhiteSpace(DescriptionEntry.Text) || string.IsNullOrWhiteSpace(CategoryEntry.Text))
+    {
+        // Show an error message
+        // Notify User of error made
+        DisplayAlert("Error", "Please fill in both description and category.", "OK");
+        return; // Return early to prevent adding the request
+    }
+
+    var request = new Request
+    {
+        Description = DescriptionEntry.Text,
+        Category = CategoryEntry.Text
+    };
+
+    _requests.Add(request);
+    DescriptionEntry.Text = string.Empty;
+    CategoryEntry.Text = string.Empty;
+    UpdateListView();
+}
+```
+
+
 
