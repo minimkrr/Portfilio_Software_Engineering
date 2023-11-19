@@ -194,8 +194,10 @@ public class Request
 }
 ```
 
+# Reviewing Code
 
+The code i reviewed had good naming conventions, all was easy to read. There were no comments to help with understanding what was going on without having to read the full file. There was no validation ot error handling on their inputs. These were the pnly main issues as coding conventions were all nicely done and the code worked as intended.
 
-
+My suggestions where to add some error handling and validation along with comments. 
 
 
