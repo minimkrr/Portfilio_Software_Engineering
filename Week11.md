@@ -204,5 +204,5 @@ My suggestions where to add some error handling and validation along with commen
 
 ![Requests](/Images/Requests.png?raw=true)
 ![Requests2](/Images/Requests2.png?raw=true)
-![Requests3](/Images/Requets3.png?raw=true)
+![Requests3](/Images/Requests3.png?raw=true)
 
