@@ -115,11 +115,6 @@ namespace Undac
         public string Name { get; set; }
         public string Location { get; set; }
         public List<string> PeopleAttending { get; set; } = new List<string>();
-
-        public string GetFormattedAttendees()
-        {
-            return string.Join(", ", PeopleAttending);
-        }
     }
 
 }
@@ -128,7 +123,7 @@ namespace Undac
 
 ```
 
-This code does as described having button click methods for adding members, viewing the created rotas and removing the created rota. 
+This code does as described having button click methods for viewing the created rotas and removing the created rota. To add members to cach rota you select it on the UI and then you can add poeple to that specific rota. 
 
-The name, location and attendees are added to each rota by the text boxes on the UI.
+The nameand location are added to each rota by the text boxes on the UI.
 
