@@ -111,6 +111,10 @@ Naming conventions: The naming of variables and functions is good, they are easi
 
 Error handling: Errors handling is a little limited, it wont allow nothing to be in an inout box however rotas can be named the same and removing only one of these would not work, this could be fixed in creation of the rota or in the removal of rota. 
 
+Input Validation: This is lacking as rota can be named the same, asignees names are just written in so spelling and grammar mistakes will happen with no checks on worng chatacters etc.
+
+
+
 
 
 
