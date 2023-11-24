@@ -3,3 +3,132 @@
 ##Issue: 
 
 I chose to create the rota issue, I have created this relatively simply, it can create a rota name, location, assign people to each specific rota entry and then view each one seeing name, location and people assigned to the particular event. 
+
+```
+using System;
+using Microsoft.Maui.Controls;
+
+namespace Undac
+
+{
+    public partial class LocalMediaAgencies : ContentPage
+    {
+        // Assume _rotaManager is a service to manage rotas
+        private List<Rota> _rotas = new List<Rota>();
+
+        public LocalMediaAgencies()
+        {
+            InitializeComponent();
+            RotaPicker.ItemsSource = GetRotaNames();
+        }
+
+        private void OnCreateRotaClicked(object sender, EventArgs e)
+        {
+            string rotaName = RotaNameEntry.Text;
+            string rotaLocation = RotaLocationEntry.Text;
+
+            if (string.IsNullOrWhiteSpace(rotaName) || string.IsNullOrWhiteSpace(rotaLocation))
+            {
+                DisplayAlert("Error", "Rota name and location are required.", "OK");
+                return;
+            }
+
+            _rotas.Add(new Rota { Name = rotaName, Location = rotaLocation });
+            RotaNameEntry.Text = string.Empty;
+            RotaLocationEntry.Text = string.Empty;
+            RotaPicker.ItemsSource = GetRotaNames(); // Refresh the picker
+        }
+
+        private void OnDiscontinueRotaClicked(object sender, EventArgs e)
+        {
+            string selectedRota = (string)RotaPicker.SelectedItem;
+            if (selectedRota != null)
+            {
+                _rotas.RemoveAll(r => r.Name == selectedRota);
+                RotaPicker.ItemsSource = GetRotaNames(); // Refresh the picker
+            }
+        }
+
+        private async void OnManageAttendeesClicked(object sender, EventArgs e)
+        {
+            string selectedRotaName = (string)RotaPicker.SelectedItem;
+            var selectedRota = _rotas.FirstOrDefault(r => r.Name == selectedRotaName);
+
+            if (selectedRota != null)
+            {
+                string attendees = await DisplayPromptAsync("Manage Attendees",
+                    $"Enter attendees for {selectedRota.Name} (comma-separated):",
+                    initialValue: string.Join(", ", selectedRota.PeopleAttending),
+                    maxLength: 500, keyboard: Keyboard.Text);
+
+                if (!string.IsNullOrWhiteSpace(attendees))
+                {
+                    selectedRota.PeopleAttending = attendees.Split(',').Select(a => a.Trim()).ToList();
+                }
+            }
+            else
+            {
+                await DisplayAlert("Error", "Please select a rota first.", "OK");
+            }
+        }
+
+        private async void OnManageRotaPoolClicked(object sender, EventArgs e)
+        {
+            string selectedRotaName = (string)RotaPicker.SelectedItem;
+            var selectedRota = _rotas.FirstOrDefault(r => r.Name == selectedRotaName);
+
+            if (selectedRota != null)
+            {
+                string attendees = await DisplayPromptAsync("Manage Attendees", 
+                    $"Enter attendees for {selectedRota.Name} (comma-separated):",
+                    initialValue: string.Join(", ", selectedRota.PeopleAttending),
+                    maxLength: 500, keyboard: Keyboard.Text);
+
+                if (!string.IsNullOrWhiteSpace(attendees))
+                {
+                    selectedRota.PeopleAttending = attendees.Split(',').Select(a => a.Trim()).ToList();
+                }
+            }
+            else
+            {
+                await DisplayAlert("Error", "Please select a rota first.", "OK");
+            }
+        }
+
+
+        private async void OnViewCalendarClicked(object sender, EventArgs e)
+        {
+            string rotaInfo = string.Join("\n", _rotas.Select(r =>
+                $"Name: {r.Name}\nLocation: {r.Location}\nAttendees: {r.GetFormattedAttendees()}\n"));
+
+            await DisplayAlert("Rota Details", rotaInfo, "OK");
+        }
+
+        private List<string> GetRotaNames()
+        {
+            return _rotas.Select(r => r.Name).ToList();
+        }
+    }
+
+    public class Rota
+    {
+        public string Name { get; set; }
+        public string Location { get; set; }
+        public List<string> PeopleAttending { get; set; } = new List<string>();
+
+        public string GetFormattedAttendees()
+        {
+            return string.Join(", ", PeopleAttending);
+        }
+    }
+
+}
+
+
+
+```
+
+This code does as described having button click methods for adding members, viewing the created rotas and removing the created rota. 
+
+The name, location and attendees are added to each rota by the text boxes on the UI.
+
