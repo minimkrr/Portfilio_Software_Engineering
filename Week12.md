@@ -72,30 +72,7 @@ namespace Undac
             }
         }
 
-        private async void OnManageRotaPoolClicked(object sender, EventArgs e)
-        {
-            string selectedRotaName = (string)RotaPicker.SelectedItem;
-            var selectedRota = _rotas.FirstOrDefault(r => r.Name == selectedRotaName);
-
-            if (selectedRota != null)
-            {
-                string attendees = await DisplayPromptAsync("Manage Attendees", 
-                    $"Enter attendees for {selectedRota.Name} (comma-separated):",
-                    initialValue: string.Join(", ", selectedRota.PeopleAttending),
-                    maxLength: 500, keyboard: Keyboard.Text);
-
-                if (!string.IsNullOrWhiteSpace(attendees))
-                {
-                    selectedRota.PeopleAttending = attendees.Split(',').Select(a => a.Trim()).ToList();
-                }
-            }
-            else
-            {
-                await DisplayAlert("Error", "Please select a rota first.", "OK");
-            }
-        }
-
-
+        
         private async void OnViewCalendarClicked(object sender, EventArgs e)
         {
             string rotaInfo = string.Join("\n", _rotas.Select(r =>
@@ -119,11 +96,23 @@ namespace Undac
 
 }
 
-
-
 ```
 
 This code does as described having button click methods for viewing the created rotas and removing the created rota. To add members to cach rota you select it on the UI and then you can add poeple to that specific rota. 
 
 The nameand location are added to each rota by the text boxes on the UI.
+
+To remove each entry the removal is just done by selecting the name of the rota and using the remove button.
+
+##Review
+
+
+Naming conventions: The naming of variables and functions is good, they are easily understandable and explain what the variable is holding or function is doing.
+
+Error handling: Errors handling is a little limited, it wont allow nothing to be in an inout box however rotas can be named the same and removing only one of these would not work, this could be fixed in creation of the rota or in the removal of rota. 
+
+
+
+
+
 
