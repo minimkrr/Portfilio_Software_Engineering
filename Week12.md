@@ -113,6 +113,14 @@ Error handling: Errors handling is a little limited, it wont allow nothing to be
 
 Input Validation: This is lacking as rota can be named the same, asignees names are just written in so spelling and grammar mistakes will happen with no checks on worng chatacters etc.
 
+##Thoughts on review
+Make it that the Input validation for names of rota does not allow the same name twice, the problem this was causing is that deleting them it would delete all with a name which is quite possibly not what the user wanted. 
+
+Inputting attendees names I think is not that easy to change, possibly you set all people before making the rota and pick from there however I do not think there is too big a problem with this. 
+
+My naming conventions where descriptive and easy to understand, this is good code practice as anyone could read these names and understand their purpose. 
+
+
 
 
 
