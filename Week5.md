@@ -12,7 +12,7 @@ Keep your functions small and with a clear focus, split up any classes that are 
 An example of this is the LevelUp class, this class has one clear purpose meaning it has been cept small and focused. 
 
 
-## onsistent Formatting:
+## Consistent Formatting:
 Keeping your code structure consistent - indentation and spacing consistent and readable 
 
 My code indentation has been kept consistent through the class and methods making it readable and easier to understand. All my methods in the class and the code inside these methods are indented to the same level metting consistent formatting.
