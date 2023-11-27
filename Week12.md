@@ -1,6 +1,6 @@
-#Week 12 issue and changes after review
+# Week 12 issue and changes after review
 
-##Issue: 
+## Issue: 
 
 I chose to create the rota issue, I have created this relatively simply, it can create a rota name, location, assign people to each specific rota entry and then view each one seeing name, location and people assigned to the particular event. 
 
@@ -104,7 +104,7 @@ The nameand location are added to each rota by the text boxes on the UI.
 
 To remove each entry the removal is just done by selecting the name of the rota and using the remove button.
 
-##Review
+## Review
 
 
 Naming conventions: The naming of variables and functions is good, they are easily understandable and explain what the variable is holding or function is doing.
@@ -113,7 +113,7 @@ Error handling: Errors handling is a little limited, it wont allow nothing to be
 
 Input Validation: This is lacking as rota can be named the same, asignees names are just written in so spelling and grammar mistakes will happen with no checks on worng chatacters etc.
 
-##Thoughts on review
+## Thoughts on review
 Make it that the Input validation for names of rota does not allow the same name twice, the problem this was causing is that deleting them it would delete all with a name which is quite possibly not what the user wanted. 
 
 Inputting attendees names I think is not that easy to change, possibly you set all people before making the rota and pick from there however I do not think there is too big a problem with this. 
